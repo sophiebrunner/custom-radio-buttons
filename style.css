@@ -21,14 +21,13 @@ body {
   background-color: var(--col-background-color);
 }
 
-.container {
+main {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
-  border: 5px solid black;
 }
 
 .custom-radio {
@@ -37,16 +36,16 @@ body {
   height: 5em;
   border-radius: 50%;
   border: 1px solid black;
+  cursor: pointer;
 }
 
-label {
+input:checked + label {
   content: "";
+  display: block;
   width: 4em;
   height: 4em;
   border-radius: 50%;
-  display: block;
   background-color: var(--col-highlight-color);
   padding: 1em;
   cursor: pointer;
-  position: absolute;
 }
